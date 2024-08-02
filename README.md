@@ -40,7 +40,7 @@ This is a simple web application that displays the message "Hello, Welcome to Ko
 ![Kubernetes Pods](screenshots/kubernetes-pods.png)
 
 -**kubernetes Services:**
-![Kubernetes services](screenshots/kubernetes-dervices.png)
+![Kubernetes services](screenshots/kubernetes-services.png)
 
 
 
