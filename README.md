@@ -43,9 +43,4 @@ This is a simple web application that displays the message "Hello, Welcome to Ko
 ![Kubernetes services](screenshots/kubernetes-dervices.png)
 
 
-- **Kubernetes Pods:**
-  ![Kubernetes Pods Screenshot](link_to_screenshot)
-
-- **Kubernetes Services:**
-  ![Kubernetes Services Screenshot](link_to_screenshot)
 
