@@ -1,5 +1,5 @@
 
-CREATING A DOCKERISED APPLICATIOn
+CREATING A DOCKERISED APPLICATION
 
 ## Description
 
@@ -22,17 +22,26 @@ This is a simple web application that displays the message "Hello, Welcome to Ko
 
 ## Docker Image URL
 
-[Docker Hub - myapp](https://hub.docker.com/r/your_dockerhub_username/myapp)
+[Docker Hub - myapp](https://hub.docker.com/r/yasinymg/myapp)
 
 ## Issues Encountered
 
-- Issue 1: [Describe any issue and how you resolved it]
-- Issue 2: [Describe any issue and how you resolved it]
+- Issue 1: I had an issue with defining ports, i went through the docs and managed it.
+  
+- Issue 2: port fowarding was an issue too 
+  
 
 ## Screenshots
 
 - **Application Running:**
-  ![Application Screenshot](link_to_screenshot)
+  ![Application Screenshot](screenshots/application-running.png)
+
+-**kubernetes Pods:**
+![Kubernetes Pods](screenshots/kubernetes-pods.png)
+
+-**kubernetes Services:**
+![Kubernetes services](screenshots/kubernetes-dervices.png)
+
 
 - **Kubernetes Pods:**
   ![Kubernetes Pods Screenshot](link_to_screenshot)
