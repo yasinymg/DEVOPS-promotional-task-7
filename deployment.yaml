@@ -17,3 +17,9 @@ spec:
         image: yasinymg/myapp:latest
         ports:
         - containerPort: 80
+        env:
+        - name: PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: myapp-secret
+              key: password
