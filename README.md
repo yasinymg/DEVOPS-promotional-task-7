@@ -43,7 +43,7 @@ This is a simple web application that displays the message "Hello, Welcome to ko
 ![Kubernetes services](screenshots/kubernetes-services.png)
 
 ```
-#### 2. Dockerize the application:
+ ##2. Dockerize the application:
 - Write a Dockerfile to containerize the application.
 
 ```dockerfile
@@ -112,7 +112,7 @@ spec:
 - spec field under template describes the desired state of the pod, including the list of containers. In this case we have just one container, with the name `myapp-app`, and the image it should pull from my Docker Hub `gbedu/myapp-app`, and the port to which it is exposed. `imagePullPolicy` specifies the image pull policy. Here, I have used Always (always pull the latest image from the registry).
 - resources: This section is used to specify the resource requests and limits for the containers in a pod. This helps Kubernetes manage resources efficiently and ensure that your application gets the resources it needs while preventing it from using too many resources. `Resource requests` are the `minimum` amount of resources that Kubernetes will allocate to the container. If the requested resources are not available, the pod will not be scheduled. `Resource limits` are the `maximum` amount of resources that the container can use. If the container tries to use more than the specified limits, Kubernetes will rescrict (throttle) it or, in the case of memory, potentially terminate the container.
 
-##### Create a Kubernetes Service of type ClusterIP to expose the application.
+## Create a Kubernetes Service of type ClusterIP to expose the application.
 `Service.yaml`
 
 ```yaml
