@@ -1,6 +1,6 @@
-from fastapi import FastAPI
+from flask import Flask
 
-app = FastAPI()
+app = Flask()
 
 @app.get("/")
 def read_root():
