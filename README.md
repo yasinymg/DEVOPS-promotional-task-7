@@ -8,44 +8,15 @@ This is a simple web application that displays the message "Hello, Welcome to ko
 ## Steps
 
 1. **Create the application:**
-   - Created a Python Flask application that displays the message.
+   - Created a Python FastAPI application that displays the message.
+
 
 2. **Dockerize the application:**
    - Wrote a Dockerfile to containerize the application.
    - Built and ran the Docker image locally.
    - Tagged and pushed the Docker image to Docker Hub.
 
-3. **Deploy to Kubernetes:**
-   - Created Kubernetes manifest files for Deployment and Service.
-   - Deployed the application to a Minikube cluster.
-   - Port-forwarded the service and accessed the application in a web browser.
-
-## Docker Image URL
-
-[Docker Hub - myapp](https://hub.docker.com/r/yasinymg/myapp)
-
-## Issues Encountered
-
-- Issue 1: I had an issue with defining ports, i went through the docs and managed it.
-  
-- Issue 2: port fowarding was an issue too 
-  
-
-## Screenshots
-
-- **Application Running:**
-  ![Application Screenshot](screenshots/application-running.png)
-
--**kubernetes Pods:**
-![Kubernetes Pods](screenshots/kubernetes-pods.png)
-
--**kubernetes Services:**
-![Kubernetes services](screenshots/kubernetes-services.png)
-
-```
- ##2. Dockerize the application:
-- Write a Dockerfile to containerize the application.
-
+   
 ```dockerfile
 # Use the official Python image
 FROM python:3.12-slim
@@ -64,9 +35,31 @@ EXPOSE 8000
 
 # Run the app
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+3. **Deploy to Kubernetes:**
+   - Created Kubernetes manifest files for Deployment and Service.
+   - Deployed the application to a Minikube cluster.
+   - Port-forwarded the service and accessed the application in a web browser.
+
+## Docker Image URL
+
+[Docker Hub - myapp](https://hub.docker.com/r/yasinymg/myapp)
+
+
+## Screenshots
+
+- **Application Running:**
+  ![Application Screenshot](screenshots/application-running.png)
+
+-**kubernetes Pods:**
+![Kubernetes Pods](screenshots/kubernetes-pods.png)
+
+-**kubernetes Services:**
+![Kubernetes services](screenshots/kubernetes-services.png)
+
 ```
 
-
+```
 
 #### 3. Deploy the application to a Kubernetes cluster:
 ##### Create a Kubernetes manifest file for a Deployment to deploy the Docker image.
