@@ -14,11 +14,16 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: yasinymg/myapp:latest
+        image: your_dockerhub_username/myapp:latest
         ports:
         - containerPort: 80
         env:
-        - name: PASSWORD
+        - name: WELCOME_MESSAGE
+          valueFrom:
+            configMapKeyRef:
+              name: myapp-config
+              key: welcome_message
+        - name: SECRET_PASSWORD
           valueFrom:
             secretKeyRef:
               name: myapp-secret
