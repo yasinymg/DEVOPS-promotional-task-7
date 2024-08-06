@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: your_dockerhub_username/myapp:latest
+        image: yasinymg/myapp:latest
         ports:
         - containerPort: 80
         env:
-        - name: WELCOME_MESSAGE
+        - name: welcome_message
           valueFrom:
             configMapKeyRef:
               name: myapp-config

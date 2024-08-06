@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    message = os.getenv('WELCOME_MESSAGE', 'Hello, Welcome to KodeCamp DevOps Bootcamp!')
+    message = os.getenv('welcomme_message', 'Hello, Welcome to KodeCamp DevOps Bootcamp!')
     return message
 
 if __name__ == '__main__':
